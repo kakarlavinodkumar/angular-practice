@@ -4,6 +4,7 @@
 */
 import { bootstrapApplication,provideProtractorTestingSupport } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
+import { HomeComponent } from './app/home.component';
 
 bootstrapApplication(AppComponent,
     {providers: [provideProtractorTestingSupport()]})
