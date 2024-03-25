@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
     template: `<section>
     <form>
       <input type="text" placeholder="Filter by city">
-      <button class="primary" type="button">Search</button>
+      <button class="primary" type="button" click=onClick()>Search</button>
     </form>
   </section>`,
     styleUrls: ['./home.component.css'], 
@@ -15,4 +15,8 @@ import { Component } from "@angular/core";
 
 export class HomeComponent {
     title = 'Home Component'
+
+    onClick = () => {
+        console.log("onClick event handler is called!!");    
+    } 
 }
