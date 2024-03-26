@@ -6,7 +6,9 @@ import { Component, Input } from '@angular/core';
   imports: [],
   template: `
     <p>
-      test works!
+      test component
+      <br>
+      parameter passed is {{param}}
     </p>
   `,
   styleUrl: './test.component.css'
