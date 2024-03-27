@@ -13,5 +13,5 @@ import { TestComponent } from './test/test.component';
 })
 export class AppComponent {
   title = 'homes';
-  test = 'test'
+  test = ['test1', 'test2', 'test3', 'test4'];
 }

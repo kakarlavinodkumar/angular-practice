@@ -1,19 +1,21 @@
 import { Component, Input } from '@angular/core';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-test',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   template: `
     <p>
       test component
-      <br>
-      parameter passed is {{param}}
+    </p>
+    <p *ngFor="let str of param">
+      <br >
+      parameter passed is {{str}}
     </p>
   `,
   styleUrl: './test.component.css'
 })
-@Input("param")
 export class TestComponent {
-  @Input() param! : string;
+  @Input() param! : string[];
 }
